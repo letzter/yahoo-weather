@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="ten_dps">10dp</dimen>
+    <dimen name="sixteen_dps">16dp</dimen>
+    <dimen name="thirty_dps">30dp</dimen>
+
+    <dimen name="fifteen_sps">15sp</dimen>
+    <dimen name="sixteen_sps">16sp</dimen>
+    <dimen name="twenty_sps">20sp</dimen>
+    <dimen name="twenty_five_dps">25sp</dimen>
+    <dimen name="forty_sps">40sp</dimen>
+    <dimen name="eighty_sps">80sp</dimen>
+    <dimen name="eighteen_sps">18sp</dimen>
+    <dimen name="sixty_dps">60dp</dimen>
+    <dimen name="fourteen_sps">14sp</dimen>
+    <dimen name="fifty_dps">50dp</dimen>
+</resources>

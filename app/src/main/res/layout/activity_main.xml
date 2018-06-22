@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewSwitcherActivityMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/app_background">
+
+        <ProgressBar
+            android:id="@+id/progressActivityMain"
+            android:layout_width="@dimen/fifty_dps"
+            android:layout_height="@dimen/fifty_dps"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:id="@+id/forecastActivityMain"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/cityActivityMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/forty_sps"
+                android:layout_marginTop="@dimen/ten_dps"/>
+
+            <TextView
+                android:id="@+id/statusActivityMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fifteen_sps"/>
+
+            <TextView
+                android:id="@+id/currentTemperatureActivityMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/eighty_sps"/>
+
+            <include layout="@layout/forecast_day_item"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/forecastRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <include layout="@layout/general_conditions"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/forty_sps"
+            android:text="@string/disconnected"/>
+    </LinearLayout>
+</ViewSwitcher>

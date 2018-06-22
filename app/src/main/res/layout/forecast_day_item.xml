@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/thirty_dps"
+    android:orientation="horizontal"
+    android:weightSum="5">
+    <TextView
+        android:id="@+id/forecast_weekday"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/eighteen_sps"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/sixteen_dps"
+        android:layout_weight="4" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/ten_dps"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/forecast_max_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen_dps"
+            android:textSize="@dimen/eighteen_sps"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/forecast_min_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixteen_dps"
+            android:textSize="@dimen/eighteen_sps"
+            android:textColor="@color/white_eighty_five" />
+    </LinearLayout>
+</LinearLayout>
